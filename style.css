@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+}
+:root {
+    --bg: #222;
+    --text: #fff;
+    --light: #cc9dff;
+ }
+
+body {
+    background: var(--bg);
+    font-size: 40px;
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.wrapper {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box-switch {
+    --bg: #fff;
+    --text: #000;
+    color: var(--text);
+    width: 100px;
+    height: 40px;
+    background: var(--light);
+    border-radius: 30px;
+    position: relative;
+    .switch {
+       background: #fff;
+       width: 30px;
+       height: 30px;
+       background: var(--bg);
+       border-radius: 100%;
+       position: absolute;
+       top: 5px;
+       left: 5px;
+       transition: 0.5s all ease;
+    }
+ }
+
+.light {
+    --bg: #cc9dff;
+    --text: #222222;
+    background: var(--bg);
+    .box-switch {
+       background: var(--text);
+       .switch {
+          transform: translateX(60px);
+       }
+    }}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid skyblue;
+    border-image: linear-gradient(to right top, blue, skyblue, blue);
+    border-image-slice: 1;
+    width: 400px;
+    height: 300px;
+   
+    
+}
+.form-ul {
+    list-style-type: none;
+    align-items: center;
+}
+.label {
+    width: 300px;
+    height: 30px;
+    border-color: blueviolet;   
+    font-size: 20px;
+}
+.form-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background-image: linear-gradient(to bottom, #dd03e4, #5611ec);
+  }
+  
+.form-btn:hover {
+    border-image: linear-gradient(to bottom,  #dd03e4, #5611ec);
+    border-image-slice: 1;
+  }
+
+.spans {
+    font-size: 20px;
+    color: var(--text);
+
+}
+
+
+.person-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    border: 10px solid skyblue;
+    border-image: linear-gradient(to right top, blue, skyblue, blue);
+    border-image-slice: 1;
+    width: 400px;
+    height: 300px;
+     
+}
+.person-li {
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;  
+}
